@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dự án 1 trang HTML hoàn chỉnh</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Chuyển đến Nội dung Chính</a>
+  <header class="site-header">
+    <div class="brand">
+      <h1>Trang Mini Website của Khánh</h1>
+      <p class="tag">HTML + CSS: flex, grid, hover, nth-child</p>
+    </div>
+    <nav class="main-nav" aria-label="Chính">
+      <ul>
+        <li><a href="#home">Trang Chủ</a></li>
+        <li><a href="#gallery">Bộ Sưu Tập</a></li>
+        <li><a href="#about">Giới Thiệu</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content">
+    <section id="home" class="hero grid-layout">
+      <div class="hero-text">
+        <h2>Xin chào, đây là trang web mẫu của tôi!</h2>
+        <p>Trang này minh họa các yêu cầu về flex, grid, pseudo-class, nth-child và accessibility.</p>
+        <p>Bên dưới là bộ sưu tập ảnh và phần giới thiệu.</p>
+      </div>
+      <div class="hero-image card">
+        <img src="https://recmiennam.com/wp-content/uploads/2018/01/hinh-nen-bien-full-hd-5.jpg" alt="Cảnh biển xanh">
+        <figcaption>Biển xanh — Unsplash</figcaption>
+      </div>
+    </section>
+    <section id="gallery" class="gallery">
+      <h2>Bộ Sưu Tập Ảnh</h2>
+      <div class="grid-gallery">
+        <figure class="card"><img src="https://cdn.pixabay.com/photo/2014/12/15/13/18/fir-trees-569047_1280.jpg" alt="Rừng sương mù"><figcaption>Rừng sương mù</figcaption></figure>
+        <figure class="card"><img src="https://photo-cms-anninhthudo.epicdn.me/h600/Uploaded/2023/bpcpcwvo/2023_03_03/p-18-4934-3488.jpg" alt="Phố cổ"><figcaption>Phố cổ</figcaption></figure>
+        <figure class="card"><img src="https://img.lovepik.com/photo/20211209/medium/lovepik-coffee-reading-time-picture_501758539.jpg" alt="Cà phê và sách"><figcaption>Cà phê & sách</figcaption></figure>
+        <figure class="card"><img src="https://st.quantrimang.com/photos/image/2019/10/02/Hinh-Nen-Ngon-Nui-11.jpg" alt="Ngọn núi"><figcaption>Ngọn núi</figcaption></figure>
+        <figure class="card"><img src="https://images2.thanhnien.vn/528068263637045248/2023/2/17/base64-16766170300891755580434.png" alt="Hoàng hôn thành phố"><figcaption>Hoàng hôn</figcaption></figure>
+      </div>
+      <p class="note">Di chuột vào ảnh để thấy hiệu ứng hover. Mỗi ảnh có border-radius khác nhau (nth-child).</p>
+    </section>
+    <section id="about" class="about grid-layout">
+      <div>
+        <h2>Giới thiệu về trang web</h2>
+        <p>Trang web này được tạo ra nhằm minh họa các kỹ thuật CSS: mô hình hộp, flexbox, grid layout, pseudo-classes và bộ chọn nâng cao nth-child.</p>
+        <p>Tất cả ảnh được định dạng theo mô hình hộp, có border, padding và border-radius.</p>
+      </div>
+      <aside class="card">
+        <img src="https://inkythuatso.com/uploads/thumbnails/800/2023/03/hinh-anh-nam-ngoi-lam-viec-voi-may-tinh-5-14-10-35-30.jpg" alt="Máy tính và ghi chú">
+      </aside>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>© 2025 Khánh Nguyễn — Dự án HTML & CSS.</p>
+  </footer>
+</body>
+</html>
